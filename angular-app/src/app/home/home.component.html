@@ -1,0 +1,80 @@
+
+
+<div class="container">
+  <div class="row">  
+     <h1 class="heading">分布式能源交易演示系统</h1>
+  </div> 
+
+  <div class="row">
+    <br>
+  </div> 
+
+  <div class="row bodytext">       
+      <div class="col-md-12">
+        <p class=""> 这个区块链应用程序演示了在网格上的“居民”网络上的能量共享。能源贸易是建立在交换通证的基础上的。该网络还包括“公用事业公司”，以交易过剩的能源或获取能源，而“银行”则将现金（法定货币）兑换成通证。 </p>
+        <p class=""> 探索更多细节 <a [routerLink]="['/About']" > 关于该应用。 </a> </p>
+
+      </div>
+    </div> 
+
+  <div class="row">
+    <br>
+  </div> 
+
+  <div class="row">
+    <h4> 步骤一 - 创建和更新参与方 </h4>
+  </div> 
+    <div class="row">
+    <div class="participant col-md-4">
+      <p> <strong>居民</strong> 拥有三种资产：能源、通证和现金。他们可以与当地居民、银行和公用事业公司进行交易。</p>
+      <a [routerLink]="['/Resident']" class=participantButton>居民</a> 
+    </div>      
+    
+    <div class="participant col-md-4">
+      <p> <strong>银行</strong> 在网络上有两种资产：现金和通证。他们可以和当地居民进行交易，他们可以买卖通证以换取现金。</p>
+      <a [routerLink]="['/Bank']" class="participantButton">银行</a>
+    </div>   
+
+    <div class="participant col-md-4">
+      <p> <strong>公用事业公司</strong> 拥有两种资产：能源和通证。他们可以与当地居民进行交易，他们可以购买或出售通证的能源。</p>
+      <a [routerLink]="['/Utility']" class="participantButton">公用事业公司</a>
+    </div> 
+  
+  </div> 
+
+  <div class="row">
+    <br>
+  </div> 
+
+
+  <div class="row">
+    <h4> 步骤二 - 执行交易 </h4>
+  </div> 
+
+  <div class="row"> 
+        
+    <div class="participant col-md-4">
+      <p> 在居民之间进行交易，用通证交换能量 </p>
+      <a [routerLink]="['/TransactionRR']" class=participantButton>居民与居民</a> 
+    </div>           
+
+    <div class="participant col-md-4">
+      <p> 在居民和银行之间进行交易，用通证交换现金 </p>
+      <a [routerLink]="['/TransactionRB']" class="participantButton">居民与银行</a>
+    </div> 
+    
+    <div class="participant col-md-4">
+      <p> 在居民和公用事业公司之间通过交换通证来进行交易 </p>
+      <a [routerLink]="['/TransactionRU']" class="participantButton">居民与公共事业公司</a>
+    </div>   
+    
+  </div> 
+
+  <div class="row">
+    <br>
+  </div> 
+  <div class="row">
+    <br>
+  </div> 
+
+</div>
